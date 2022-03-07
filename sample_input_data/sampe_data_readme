@@ -1,0 +1,3 @@
+.epic files are initial profiles for salinity (sal), temperature (temp) and horizontal water velocity (vel)
+_forcings_ files contain meteorological forcings (heat fluxes, wind, etc.)
+AS refers to Arabian Sea data; COARE to the Tropical Ocean Global Atmosphere Coupled Ocean–Atmosphere Response Experiment in the western Pacific warm-pool
