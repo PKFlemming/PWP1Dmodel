@@ -16,9 +16,9 @@ class Day_log:
     def log_sst_mld(self, sst, mld, time_since_beginning):
         self.day_ssts.append(sst)  # log surface temp to day record
         self.day_mlds.append(mld)  # log mixed layer depth to day record
-        if time_since_beginning % (24 * 3600) == 0 and time_since_beginning > 0:  # if hrs since start is multiple of 24
+        if time_since_beginning % (24 * 3600) == 0 and time_since_beginning > 0:  # if hrs since start is multiple of 24, i.e. do this once a day
             # process sea surface temperatures
-            # find and log day average SST
+            # find and log day-average SST
             day_av_sst = np.mean(self.day_ssts)  # take average of recorded SSTs
             self.day_av_ssts.append(day_av_sst)  # log to record of day-average SSTs
             # find and log magnitude of diurnal cycle
